@@ -1,0 +1,144 @@
+.box-kotak {
+  background-image: url(../img/bg-jumbotron.jpg);
+  /* background-color: #262626; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+  margin-top: 90px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-kotak::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.jdl-team {
+  position: relative;
+
+  text-align: center;
+  z-index: 99;
+  color: white;
+}
+.jdl-team h3 {
+  font-weight: 700;
+}
+
+/* box struktur organisasi */
+.box-struktur .container {
+  flex-wrap: wrap;
+}
+
+.box-cards {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  /* background: linear-gradient(#ebebeb, #ebebeb, 30%, #fff 30%, #fff); */
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+}
+
+.imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 1000;
+  transform-origin: top;
+  overflow: hidden;
+  border-radius: 20px;
+  /* transform: translateY(30px) scale(0.5); */
+  transform: translateY(30px) scale(0.5);
+}
+
+.box-cards:hover .imgBx {
+  transform: translateY(0) scale(1);
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-cards .content {
+  position: absolute;
+  /* top: 150px; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  transition: 0.5s;
+}
+
+.box-cards:hover .content {
+  top: 150px;
+  /* top:    0; */
+}
+.box-cards .container .details {
+  color: white;
+}
+
+.details h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #262626;
+}
+.details span {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.social_icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.social_icons li {
+  font-size: 20px;
+}
+
+.social_icons li a {
+  background-color: #262626;
+  margin: 5px;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  transition: 0.3s;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  height: 40px;
+}
+.social_icons li a:hover {
+  background-color: #ffc107;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .svgbawah {
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top" id="navbar-home">
+      <div class="container">
+        <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="/img/logo.png" alt="" height="50px" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{.Site.BaseURL}}">Home</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Tentang Kami</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/">Profile</a>
+                <a class="dropdown-item" href="/">Struktur Kepanitiaan</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li> -->
+            <li class="nav-item active">
+              <a class="nav-link" href="/blog">Kelas</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Partnership</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Media Partner</a>
+                <a class="dropdown-item" href="#">Pendukung</a>
+              </div>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="/galeri">Galeri</a>
+            </li>
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="/laporan">Laporan</a>
+            </li> -->
+            <li class="nav-item active">
+              <a class="nav-link btn btn-success text-white btn-donasi" href="/donasi">Donasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir header -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid align-items-center">
+      <div class="container">
+        <div class="judul-jumbotron">
+          <h2>
+            Ramadhan <br />
+            Di Syuhada
+          </h2>
+          <span
+            >Media Informasi Kegiatan <br />
+            Ramadhan di Masjid Syuhada</span
+          >
+        </div>
+      </div>
+      <!-- <svg class="svgbawah" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,288L48,261.3C96,235,192,181,288,181.3C384,181,480,235,576,266.7C672,299,768,309,864,282.7C960,256,1056,192,1152,154.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg> -->
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- Pengantar -->
+    <section class="pengantar py-5 my-0 py-sm-5 my-sm-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-6">
+            <!-- <span class=" f-ket">Selamat datang di website</span> -->
+            <h2 class="f-jdl">
+              Ramadhan Di <br />
+              <span class="text-success">Masjid Syuhada</span>
+            </h2>
+            <p class="pr-3">
+              Pada Ramadhan 1444 H kali ini, Panitia Ramadhan Masjid Syuhada mengangkat tema <b>'Merajut Ukhuwah Meraih Berkah'</b>, dengan maksud mengeratkan ukhuwah umat Muslim melalui rangkaian kegiatan yang dapat diikuti semua kalangan.
+              Dimana Masjid Syuhada merupakan simbol, penggerak, dan pembangun peradaban di Yogyakarta pada khususnya dan Indonesia pada umumnya.
+            </p>
+
+            <!-- <a href="/profile" class="btn-custom text-center" style="border-radius: 5px">selengkapnya</a> -->
+          </div>
+          <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+            <video src="/video/videoramadhan.mp4" width="100%" autoplay class="rounded"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Akhir Pengantar -->
+    <!-- <h2 class="text-center mb-5 ">Blog Terbaru</h2>
+    {{ partial "post-grid.html" . }} -->
+
+    <!-- sponsor -->
+    <div class="section bg-light p-5">
+      <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, porro! Nesciunt eos voluptatum voluptate molestiae. Laboriosam, consectetur. Assumenda inventore labore esse quia dolor exercitationem repellendus. Quasi quas rem
+        deleniti possimus?
+      </div>
+    </div>
+    <!-- Akhir sponsor -->
+
+    <!-- Donasi Dakwah -->
+    <section class="donasi bg-success p-5 text-white">
+      <div class="py-5">
+        <h3 class="text-center donasi-isi f-jdl">
+          Donasi <br />
+          Buka Puasa & Sahur
+        </h3>
+        <br />
+        <div class="row justify-content-md-center donasi-isi align-items-center">
+          <div class="col-12 col-sm-6 text-center text-md-right">
+            <img src="/img/donasitakjilan.jpeg" alt="" class="rounded" style="width: 250px" />
+
+            <div class="d-block d-sm-none">
+              Melalui Rekening BANK Bukopin Syariah <br />
+              <h1><b>7183996538</b></h1>
+              <span>An.Corps Dakwah Mjd Syuhada</span>
+
+              <br /><br />
+              <span>Konfirmasi ke </span>
+              <h3><b>085643301453</b></h3>
+              <span>An. Izza Wildan Ridhoni</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-none d-sm-block">
+            Melalui Rekening BANK Bukopin Syariah <br />
+            <h1><b>7709007325</b></h1>
+            <span>An.Masjid Syuhada</span>
+
+            <br /><br />
+            AtauMelalui Rekening BANK Muamalat<br />
+            <h1><b>5310076177</b></h1>
+            <span>An.Masjid Syuhada</span>
+            <br />
+            <br />
+            <span>Konfirmasi ke </span>
+            <h3><b>0822-6135-9523</b></h3>
+            <span>An. Nisa Nuraeni</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Donasi Dakwah -->
+
+    <!-- maps -->
+    <section class="maps py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.3814729720715!2d110.36924350819032!3d-7.786128690761765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a582e4bf0fdab%3A0xe71fab312b2f5b84!2sCorps%20Dakwah%20Masjid%20Syuhada!5e0!3m2!1sid!2sid!4v1641455449199!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe
+              ><br />
+              <i class="fas fa-map-marker-alt"></i> <span>Lokasi Kantor Kami</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir maps -->
+
+    <!-- widget whatsapp -->
+
+    <div class="elfsight-app-63898b03-3081-4c7b-b578-1b7572896f33"></div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 100) {
+          document.getElementById('navbar-home').style.backgroundColor = 'white';
+          var element = document.getElementById('navbar-home');
+          element.classList.add('navbar-light');
+          element.classList.add('shadow-sm');
+          element.classList.add('border');
+          element.classList.remove('navbar-dark');
+        } else {
+          document.getElementById('navbar-home').style.backgroundColor = 'transparent';
+          var element = document.getElementById('navbar-home');
+          element.classList.remove('navbar-light');
+          element.classList.remove('shadow-sm');
+          element.classList.remove('border');
+          element.classList.add('navbar-dark');
+        }
+      }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    {{ partial "footer.html" . }} {{ partial "js-init.html" . }}
+  </body>
+</html>

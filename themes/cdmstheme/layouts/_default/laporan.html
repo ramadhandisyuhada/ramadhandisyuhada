@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{- partial "nav.html" . -}}
+    <br>
+<div class="container mb-5 mt-5" style="min-height: 500px;">
+    <div class="bg-white" style="border-radius: 20px;">
+      <div class="accordion mt-5 pt-5" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4 class="text-dark" style="text-decoration: none;">Laporan Bidang Kajian</h4>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <ul>
+                  <li>
+                    <a href="/laporan/januari.docx"> Laporan Bulan Januari 2022</a><br>
+                  </li>
+                <li>
+                  <a href="#"> Laporan Bulan februari 2022</a><br>
+                </li>
+                <li>
+                  <a href="/laporan/maret.pdf"> Laporan Bulan maret 2022</a><br>
+                </li>
+                <li>
+                  <a href="#"> Laporan Bulan April 2022</a> <br>
+                </li>
+                <li>
+                  <a href="/laporan/mei.pdf"> Laporan Bulan Mei 2022</a><br>
+                </li>
+                <li>
+                  <a href="/laporan/juni.pdf"> Laporan Bulan Juni 2022</a><br>
+                </li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6">
+                <ul>
+                    <li>
+                      <a href="/laporan/juli.pdf"> Laporan Bulan Juli 2022</a> <br>
+                    </li>
+                    <li>
+                      <a href="#"> Laporan Bulan Agustus 2022</a><br>
+                    </li>
+                    <li>
+                      <a href="#"> Laporan Bulan Spetember 2022</a><br>
+                    </li>
+                    <li>
+                      <a href="/laporan/oktober.pdf"> Laporan Bulan Oktober 2022</a><br>
+                    </li>
+                    <li>
+                      <a href="#"> Laporan Bulan November 2022</a><br>
+                    </li>
+                    <li>
+                      <a href="#"> Laporan Bulan Desember 2022</a><br>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               <h4 class="text-dark" style="text-decoration: none;">Laporan Keuangan CDMS</h4>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+               <a href="https://bit.ly/keuangancdms">Keuangan Januari - September 2022</a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    </div>
+</div>
+</div>
+ {{- partial "footer.html" . -}}
+    {{- partial "js-init.html" . -}}
+</html>

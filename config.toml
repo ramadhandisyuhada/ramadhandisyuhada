@@ -1,0 +1,27 @@
+title = "Ramadhan Di Syuhada"
+baseurl = "http://localhost:1313/"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+paginate = 6
+
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "cdmstheme"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "Cdms Syuhada"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "UA-80517197-1" 
+
+# Untuk deskripsi tag meta di homepage
+description = "Website Official Panitia Ramadhan Masjid Syuhada 1444 H"
+
+# Biodata Author
+[author]
+    name = "Admin"
+

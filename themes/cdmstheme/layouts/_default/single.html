@@ -1,0 +1,50 @@
+{{ define "main" }} 
+        {{ partial "nav.html" . }}
+
+    <!-- detail -->
+    <div class="container">
+      <div class="row pt-5 mt-5 mb-5">
+        <!-- <div class="col-md-8 mt-3"> -->
+        <div class="col-12 col-md-8  mt-3">
+          <div class="card card-postgrid">
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <!-- <img src="{{ .Site.Author.image }}" alt="" width="40px" /> -->
+                <img src="/img/akun.png" alt="" width="40px" />
+                <span class="d-block ml-2">{{ .Site.Author.name }} | <time>{{ .Date.Format "02-01-2006" }}</time></span>
+              </div>
+              <div class="detail-judul py-2">
+                <h2 class="mt-2">{{ .Title }}</h2>
+              </div>
+              <hr />
+              <div class="imgtengah">
+                {{ .Content }}
+              </div>
+
+              <br />
+               <div>
+                    {{ range .Params.tags }}
+                    <span class="badge badge-success">
+                            #<a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    </span> 
+                    {{ end }}
+                </div>
+              <hr />
+
+              <!-- diskus -->
+              {{ partial "disqus.html" . }}
+              <!-- Akhir diskus -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mt-3 ">
+          {{ partial "aside.html" . }}
+          
+        </div> 
+      </div>
+    </div>
+    <!-- Akhir detail -->
+   
+
+     
+{{end}} 
